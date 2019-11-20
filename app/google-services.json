@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "870392962294",
+    "firebase_url": "https://catwalk-6c421.firebaseio.com",
+    "project_id": "catwalk-6c421",
+    "storage_bucket": "catwalk-6c421.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870392962294:android:5e9feb1c4eab0879f260d7",
+        "android_client_info": {
+          "package_name": "br.www.mycatwalk.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870392962294-i8ipbv88fjnbg3u608usi18qpoquat59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.www.mycatwalk.com",
+            "certificate_hash": "512cbba418ac573810db8bc658a995c999beb064"
+          }
+        },
+        {
+          "client_id": "870392962294-7vva3fstbrh3tj8rdondqrahl8e6nfc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfjxmtHhx20tnWsTCouv7EQiCQYO7kL_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870392962294-7vva3fstbrh3tj8rdondqrahl8e6nfc3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

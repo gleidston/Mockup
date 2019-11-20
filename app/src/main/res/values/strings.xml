@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TRAININGMOCKUP</string>
+    <string name="title_home">calendario</string>
+    <string name="title_dashboard">Mapa</string>
+    <string name="title_notifications">Camera</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="deslogar">Deslogar</string>
+</resources>

@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply plugin: 'androidx.navigation.safeargs'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "br.www.mycatwalk.com"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    // dependencias firebase
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.google.firebase:firebase-auth:18.0.0'
+    implementation 'com.google.firebase:firebase-core:17.0.0'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.google.firebase:firebase-storage:11.8.0'
+    implementation 'com.firebaseui:firebase-ui-storage:0.6.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    // WeatherLocation
+    implementation "com.google.android.gms:play-services-location:16.0.0"
+
+
+    // pacote retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+// pacote de conversão de JSON para Model e Model para JSON
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+// interceptar requisições
+    implementation 'com.squareup.okhttp3:okhttp:3.5.0'
+// logar as requisições no LOGCAT
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+// courotine pacote
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-experimental-adapter:1.0.0'
+// biblioteca para download de imagens via url
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+
+    // implementaçao da dependencia kotlin jet brains
+    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // bibliotecas que adicionei para construçao da api previsao do tempo em Kotlin
+
+    // simples requisiçao de api lib
+    implementation 'com.github.androdocs:Simple-HTTP-Request:v1.0'
+
+
+    // Kotlin Android Coroutines
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.0-RC1'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.0-RC1"
+
+
+    // Kodein
+    implementation "org.kodein.di:kodein-di-generic-jvm:$kodein_version"
+    implementation "org.kodein.di:kodein-di-framework-android-x:$kodein_version"
+
+    // Better dateTime-time support even on older Android versions
+    implementation "com.jakewharton.threetenabp:threetenabp:1.1.0"
+    // Groupie RecyclerView
+    implementation 'com.xwray:groupie:2.1.0'
+    implementation 'com.xwray:groupie-kotlin-android-extensions:2.1.0'
+
+    // Better dateTime-time support even on older Android versions
+    implementation "com.jakewharton.threetenabp:threetenabp:1.1.0"
+
+
+    // New Material Design
+    implementation "com.google.android.material:material:1.0.0"
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+}
