@@ -1,4 +1,4 @@
-package br.www.mycatwalk.com.ui.home;
+package br.www.mycatwalk.com.ui.calendario;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,13 +14,13 @@ import androidx.lifecycle.ViewModelProviders;
 
 import br.www.mycatwalk.com.R;
 
-public class Home1Fragment extends Fragment {
-    private Home1ViewModel homeViewModel;
+public class HomeFragment extends Fragment {
+    private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
-                ViewModelProviders.of(this).get(Home1ViewModel.class);
+                ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_calendario, container, false);
 
 

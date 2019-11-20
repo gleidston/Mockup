@@ -1,13 +1,11 @@
-package br.www.mycatwalk.com.ui.notifications;
+package br.www.mycatwalk.com.ui.camera;
 
 import android.Manifest;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.renderscript.Sampler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,13 +14,8 @@ import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
-import com.bumptech.glide.disklrucache.DiskLruCache;
-
-import java.io.ByteArrayOutputStream;
-
 import br.www.mycatwalk.com.R;
 import br.www.mycatwalk.com.helper.Permissao;
-import br.www.mycatwalk.com.ui.activities.FiltroActivity;
 
 public class CameraFragment extends Fragment {
     private Button buttonAbrirGaleria, buttonAbrirCamera;

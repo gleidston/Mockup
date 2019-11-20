@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="br.www.mycatwalk.com.ui.home.Home1Fragment"
+        android:name="br.www.mycatwalk.com.ui.calendario.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_calendario" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="br.www.mycatwalk.com.ui.dashboard.DashboardFragment"
+        android:name="br.www.mycatwalk.com.ui.mapa.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_map" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="br.www.mycatwalk.com.ui.notifications.CameraFragment"
+        android:name="br.www.mycatwalk.com.ui.camera.CameraFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_camera" />
 </navigation>
